@@ -647,7 +647,7 @@ describe('Integration: services/url/UrlService', function () {
 
             common.events.emit('db.ready');
 
-            let timeout;
+            let timeout=5000;
             (function retry() {
                 clearTimeout(timeout);
 
