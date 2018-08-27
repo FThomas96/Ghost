@@ -89,6 +89,7 @@ function testPing() {
 function listen() {
     common.events.on('post.published', listener);
     common.events.on('slack.test', testPing);
+    return;
 }
 
 // Public API
